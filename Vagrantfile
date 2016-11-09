@@ -22,7 +22,7 @@ Vagrant.configure(2) do | config |
   end
 
   config.vm.provision "shell", path: "scripts/update-pkgs.sh"
-  config.vm.provision "shell", path: "scripts/vagrant-autologin.sh"
+  config.vm.provision "shell", path: "scripts/autologin.sh"
   config.vm.provision "shell", path: "scripts/nbr2mp4.sh", privileged: false
 
 end
